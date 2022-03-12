@@ -1,0 +1,23 @@
+{
+  "name": "intro2js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "TheBasics.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RizniKabir-852/Intro2JS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RizniKabir-852/Intro2JS/issues"
+  },
+  "homepage": "https://github.com/RizniKabir-852/Intro2JS#readme",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
+}
