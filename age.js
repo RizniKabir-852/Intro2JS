@@ -48,7 +48,7 @@ let counter = 10;
         console.log(`In ${counter} years, you will be ${counter+age} years old.`);
         counter +=10;
     }
-}
+
 
 //for loop method
 // time = [10,20,30,40];
