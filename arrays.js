@@ -112,15 +112,15 @@ from the input array. Use the filter method in your function.
 */
 
 //INITIAL ANSWER
-let findIntegers = (userArray) => {
+// let findIntegers = (userArray) => {
 
-  return userArray.filter(value =>{
-    if(typeof value === 'number'){
-      return value;
-    }
-  })
+//   return userArray.filter(value =>{
+//     if(typeof value === 'number'){
+//       return value;
+//     }
+//   })
 
-}; 
+// }; 
 
 //MODIFIED ANSWER
 // let findIntegers = (userArray) => {
@@ -131,15 +131,17 @@ let findIntegers = (userArray) => {
 // }
 
 //BOOK ANSWER
-// let findIntegers = (list) =>{
-//   return list.filter(val => {
-//     return Number.isInteger(val);
-//   });
-// }
+let findIntegers = (list) =>{
+  return list.filter(val => {
+    return Number.isInteger(val);
+  });
+}
  
 let things = [1, 'a', '1', 3, NaN, 3.1415, -4, null, false];
 let integers = findIntegers(things);
 console.log(integers); // => [1, 3, -4]
 
+//My findings, in the function, you need to return the filtered list and not just the items in the list 
 
+//6.
 
