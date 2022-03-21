@@ -36,3 +36,34 @@ array5 has a length of 101
 - since the 100th index was picked inside an empty list, 100 spaces were created and the length of the list is the last index + 1
 
 */
+
+//2. Log all of the even values from myArray to the console.
+
+let myArray = [1, 3, 6, 11, 4, 2,
+  4, 9, 17, 16, 0];
+
+//method 1
+myArray.forEach(function(num){
+  if(num % 2 === 0){
+    console.log(num)
+  }
+});
+
+//method 2
+// for(i = 0; i < myArray.length; i += 1){
+//   if(myArray[i] % 2 === 0){
+//     console.log(myArray[i])
+//   }
+// };
+
+//method3
+// let i = 0
+// while(i < myArray.length){
+//   if(myArray[i] % 2 === 0){
+//     console.log(myArray[i])
+//     i += 1
+//   }
+//   else{
+//     i += 1
+//   }
+// };
