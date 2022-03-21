@@ -43,11 +43,11 @@ let myArray = [1, 3, 6, 11, 4, 2,
   4, 9, 17, 16, 0];
 
 //method 1
-myArray.forEach(function(num){
-  if(num % 2 === 0){
-    console.log(num)
-  }
-});
+// myArray.forEach(function(num){
+//   if(num % 2 === 0){
+//     console.log(num)
+//   }
+// });
 
 //method 2
 // for(i = 0; i < myArray.length; i += 1){
@@ -67,3 +67,20 @@ myArray.forEach(function(num){
 //     i += 1
 //   }
 // };
+
+//3. we're again interested in even numbers, but this time the numbers are in nested arrays in a single outer array
+
+let myNestedArray = [
+  [1, 3, 6, 11],
+  [4, 2, 4],
+  [9, 17, 16, 0],
+];
+
+for(i = 0; i < myNestedArray.length; i += 1){        // The first for loop accesses the first layer of the array
+  for(x = 0; x < myNestedArray[i].length; x+=1 ){    // The second for loop accesses the inner loop where the values are
+    if(myNestedArray[i][x] % 2 === 0){ 
+      console.log(myNestedArray[i][x])
+    }                                                // Go through the inner loop to check, if everything is checked go to the outer loop and go to the next inner array
+  }
+};
+
