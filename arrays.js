@@ -92,16 +92,54 @@ otherwise, the element in the new array should contain 'odd'
 
 */
 
-let newArray = myArray.map((num) =>{
-  if(num % 2 === 0 ){
-    return "even";
-  }
-  else {
-    return "odd"; 
-  }
-});
+// let newArray = myArray.map((num) =>{
+//   if(num % 2 === 0 ){
+//     return "even";
+//   }
+//   else {
+//     return "odd"; 
+//   }
+// });
 
-console.log(newArray);
+// console.log(newArray);
+
+
+/*
+
+5. Write a findIntegers function that takes an array argument and returns an array that contains only the integers 
+from the input array. Use the filter method in your function.
+
+*/
+
+//INITIAL ANSWER
+let findIntegers = (userArray) => {
+
+  return userArray.filter(value =>{
+    if(typeof value === 'number'){
+      return value;
+    }
+  })
+
+}; 
+
+//MODIFIED ANSWER
+// let findIntegers = (userArray) => {
+
+//   userArray.filter(value => {
+//     return Number.isInteger(value);
+//   });
+// }
+
+//BOOK ANSWER
+// let findIntegers = (list) =>{
+//   return list.filter(val => {
+//     return Number.isInteger(val);
+//   });
+// }
+ 
+let things = [1, 'a', '1', 3, NaN, 3.1415, -4, null, false];
+let integers = findIntegers(things);
+console.log(integers); // => [1, 3, -4]
 
 
 
