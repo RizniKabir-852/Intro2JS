@@ -143,5 +143,22 @@ console.log(integers); // => [1, 3, -4]
 
 //My findings, in the function, you need to return the filtered list and not just the items in the list 
 
-//6.
+/*
+6. Use map and filter to first determine the lengths of all the elements in an array of string values, 
+then discard the even values (keep the odd values).
+*/
+oddLengths = (list) => {
+  let newList = list.map(val => val.length);
+
+  return newList.filter(index =>{
+    return index % 2 !== 0;
+  })
+
+};
+
+let arr = ['a', 'abcd', 'abcde', 'abc', 'ab'];
+console.log(oddLengths(arr)); // => [1, 5, 3]
+
+
+
 
