@@ -84,3 +84,24 @@ for(i = 0; i < myNestedArray.length; i += 1){        // The first for loop acces
   }
 };
 
+/* 
+
+4. use the map function to create a new array that contains one element for each element in the original array. 
+If the element is an even value, then the corresponding element in the new array should contain the string 'even'; 
+otherwise, the element in the new array should contain 'odd' 
+
+*/
+
+let newArray = myArray.map((num) =>{
+  if(num % 2 === 0 ){
+    return "even";
+  }
+  else {
+    return "odd"; 
+  }
+});
+
+console.log(newArray);
+
+
+
